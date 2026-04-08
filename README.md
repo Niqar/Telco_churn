@@ -1,12 +1,8 @@
-### Dataset
-
-Download the dataset from [Kaggle](https://www.kaggle.com/datasets/blastchar/telco-customer-churn) and place it in the root directory as `telco_churn.csv`
-
----
-
 # 📡 Telco Customer Churn Predictor
 
 A machine learning project that predicts whether a telecom customer will churn, with an interactive Streamlit web application for real-time predictions.
+
+🔗 **Live App:** [telcochurn-fbbwzxjey9upsrtzyudge7.streamlit.app](https://telcochurn-fbbwzxjey9upsrtzyudge7.streamlit.app)
 
 ---
 
@@ -25,6 +21,7 @@ Customer churn is one of the most critical challenges in the telecom industry �
 ├── telco_churn.ipynb        # Full ML pipeline (EDA → training → evaluation)
 ├── app.py                   # Streamlit web application
 ├── best_pipeline_small.pkl  # Saved model (8-feature pipeline)
+├── requirements.txt         # Python dependencies
 ├── telco_churn.csv          # Dataset (download from Kaggle)
 └── README.md
 ```
@@ -109,6 +106,8 @@ A lightweight pipeline (`best_pipeline_small.pkl`) was retrained on these 8 feat
 
 The app allows users to input customer details and receive an instant churn risk prediction.
 
+🔗 **Live:** [telcochurn-fbbwzxjey9upsrtzyudge7.streamlit.app](https://telcochurn-fbbwzxjey9upsrtzyudge7.streamlit.app)
+
 ### Input Features
 - **Tenure** (months) — slider
 - **Monthly Charges** ($) — slider
@@ -127,6 +126,10 @@ The app allows users to input customer details and receive an instant churn risk
 
 ## 🚀 Getting Started
 
+### Dataset
+
+Download the dataset from [Kaggle](https://www.kaggle.com/datasets/blastchar/telco-customer-churn) and place it in the root directory as `telco_churn.csv`.
+
 ### Prerequisites
 
 ```bash
@@ -142,6 +145,8 @@ streamlit run app.py
 > ⚠️ Make sure `best_pipeline_small.pkl` is in the same directory as `app.py`.
 
 ### Run the Notebook
+
+> 📥 Download the dataset from [Kaggle](https://www.kaggle.com/datasets/blastchar/telco-customer-churn) and place it in the root directory as `telco_churn.csv`
 
 Open `telco_churn.ipynb` in Jupyter or VS Code. The notebook will generate `best_pipeline_small.pkl` when run end-to-end.
 
